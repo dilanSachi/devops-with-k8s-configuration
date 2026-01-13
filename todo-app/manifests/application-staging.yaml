@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ex410-staging
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/dilanSachi/devops-with-k8s-configuration
+    path: todo-app/manifests/overlays/staging
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: project-staging
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
