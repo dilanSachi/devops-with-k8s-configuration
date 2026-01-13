@@ -8,11 +8,11 @@ patches:
 images:
 - name: PROJECT/BROADCASTER_APP_IMAGE
   newName: dilansachi/devopswk8s-ex410-broadcaster-app
-  newTag: 4.9-93eec57f4511ca7b56a17a2dae59691729a69b73
+  newTag: 4.10-54b008acc8d23c5b78f6684d8d68304d494d5511
 - name: PROJECT/TODO_APP_IMAGE
   newName: dilansachi/devopswk8s-ex410-todo-app
-  newTag: 4.9-93eec57f4511ca7b56a17a2dae59691729a69b73
+  newTag: 4.10-54b008acc8d23c5b78f6684d8d68304d494d5511
 - name: PROJECT/TODO_BACKEND_IMAGE
   newName: dilansachi/devopswk8s-ex410-todo-backend
-  newTag: 4.9-93eec57f4511ca7b56a17a2dae59691729a69b73
+  newTag: 4.10-54b008acc8d23c5b78f6684d8d68304d494d5511
 namespace: project-prod
